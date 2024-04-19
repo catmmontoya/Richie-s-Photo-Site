@@ -11,6 +11,13 @@ const app = express();
 app.use(morgan("dev"));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+app.use(
+  session({
+    secret: "richiePhotos",
+    saveUninitialized: false,
+    resave: false,
+  })
+);
 
 ViteExpress.listen(app, 8008, () =>
   console.log("We are live at http://localhost:8008")

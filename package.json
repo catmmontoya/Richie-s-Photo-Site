@@ -1,4 +1,8 @@
 {
+  "name": "RichieSite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "dev": "nodemon backend/server/server.js -w backend -w src",
     "build": "vite build",
@@ -13,12 +17,15 @@
     "express-session": "^1.18.0",
     "morgan": "^1.10.0",
     "nodemon": "^3.1.0",
+    "pg": "^8.11.5",
+    "pg-hstore": "^2.3.4",
     "postgres": "^3.4.4",
     "react-dom": "^18.2.0",
     "react-redux": "^9.1.1",
     "react-router": "^6.22.3",
     "react-router-dom": "^6.22.3",
     "sequelize": "^6.37.3",
+    "vite": "^5.2.9",
     "vite-express": "^0.16.0"
   }
 }
